@@ -54,7 +54,6 @@ const Home: NextPage = () => {
         <p id="movesText">{moves.join(",")}</p>
         <p>Address: {gameContract?.address}</p>
         <SendMoves moves={moves} />
-        <p>lkmlkmlkmllmlkm</p>
         <Game pipeHeights={initState.pipeHeights} callback={setMovesCallback} />
         <TransactionList />
       </div>
