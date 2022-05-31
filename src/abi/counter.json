@@ -1,0 +1,80 @@
+[
+  {
+    "inputs": [
+      {
+        "name": "address",
+        "type": "felt"
+      }
+    ],
+    "name": "showInitState",
+    "outputs": [
+      {
+        "name": "pos.x",
+        "type": "felt"
+      },
+      {
+        "name": "pos.y",
+        "type": "felt"
+      },
+      {
+        "name": "yVelocity",
+        "type": "felt"
+      },
+      {
+        "name": "pipesOffset_len",
+        "type": "felt"
+      },
+      {
+        "name": "pipesOffset",
+        "type": "felt*"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "address",
+        "type": "felt"
+      },
+      {
+        "name": "addrChunk",
+        "type": "felt"
+      }
+    ],
+    "name": "getPosFromAddress",
+    "outputs": [
+      {
+        "name": "pos.x",
+        "type": "felt"
+      },
+      {
+        "name": "pos.y",
+        "type": "felt"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "moves",
+        "type": "felt*"
+      },
+      {
+        "name": "tokenAddress",
+        "type": "felt"
+      }
+    ],
+    "name": "validateGame",
+    "outputs": [
+      {
+        "name": "isValid",
+        "type": "felt"
+      }
+    ],
+    "type": "function"
+  }
+]
