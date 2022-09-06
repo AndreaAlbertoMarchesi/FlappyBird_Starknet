@@ -1,13 +1,14 @@
-Flappy bird executed on starknet
+Flappy bird on Starknet!
 
-To run:
-1) npm install
-2) npm run dev
+## How to run
 
-200  moves    cost: 0.000015939900127519
-1    move    costs: 0.000013113075131131
-2    moves    cost: 0.000013126500118138
-2    moves    cost: 0.00001313992511826
-1 extra move costs: 0.000000013 equivalent to 0,0000233402 USD
-1000 extra   moves: 0.000013 equivalent to 0,0233402 USD
+First, you need to install a browser wallet, either [Argent](https://www.argent.xyz/) or [Braavos](https://braavos.app/)
 
+Second, you need to get some test eth from the faucet to pay for transactions [Faucet](https://faucet.goerli.starknet.io/)
+
+Third, run 
+```bash
+npm run dev
+```
+
+Then you can play and you you should be able to see your latest score from the function getBalance at address: 0x2701ec5cb4fbdab7714c5a9393a6a31999599a9f643d469df37962d1b533776

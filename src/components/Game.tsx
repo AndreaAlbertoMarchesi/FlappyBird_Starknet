@@ -11,7 +11,7 @@ interface AppProps {
 
 interface GameState {
     pipeHeights: number[],
-    speed: number,
+    fps: number,
     pause: boolean,
     play: boolean,
     gameOver: String,
@@ -34,7 +34,7 @@ class Game extends React.Component<AppProps, GameState> {
         super(props);
         initState = {
             pipeHeights: props.pipeHeights,
-            speed: 70,
+            fps: 15,//70,
             pause: false,
             play: false,
             gameOver: "",
@@ -49,7 +49,8 @@ class Game extends React.Component<AppProps, GameState> {
     }
 
     componentDidMount(): void {
-        setInterval(this.moveBird, this.state.speed)
+        let frameDelay = 1000 / this.state.fps;
+        setInterval(this.moveBird, frameDelay)
         document.onkeydown = this.onKeyDown;
     }
 
@@ -124,7 +125,7 @@ class Game extends React.Component<AppProps, GameState> {
     onGameOver() {
         this.setState({
             pipeHeights: initState.pipeHeights,
-            speed: 70,
+            fps: 70,
             pause: false,
             play: false,
             gameOver: `Game Over! Your Score was ${this.state.birdPos} Try Again`,

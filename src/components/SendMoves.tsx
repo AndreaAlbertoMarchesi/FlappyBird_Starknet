@@ -18,7 +18,7 @@ export function SendMoves(props: SnakeProps) {
   return (
     <button
       className="ml-2 rounded-md w-32 px-2 py-1 bg-slate-700 text-white"
-      onClick={() => invoke({ args: [props.moves, "0x00e8dee7a500ea982c742a60c4498a666b706a23f2c8d8f89c9b5faeef3bc292"] })}
+      onClick={() => invoke({ args: [props.moves] })}
     >Send moves to contract</button>
 
   )

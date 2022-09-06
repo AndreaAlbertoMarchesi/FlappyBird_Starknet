@@ -50,7 +50,7 @@ const Home: NextPage = () => {
     return (
       <div>
         <ConnectWallet />
-        <h1>moves:</h1>
+        <h1>{moves.length} moves:</h1>
         <p id="movesText">{moves.join(",")}</p>
         <p>Address: {gameContract?.address}</p>
         <SendMoves moves={moves} />
